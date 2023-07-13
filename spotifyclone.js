@@ -25,4 +25,11 @@ let songs = [
         return song1.play();
     }
 
+    let playline= document.getElementById('playline');
+
+    playline.addEventListener('timeupdate',()=>{
+        console.log('timeupdate');
+    });
+
+    // console.log(playline);
 
