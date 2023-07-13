@@ -1,6 +1,6 @@
 console.log("hey listeners");
 
-let song1 = new Audio('1song.mp3');
+
 // song1.play();
 
 // let songElement = document.getElementById('playicon');
@@ -15,19 +15,31 @@ let songs = [
 ];
 
 
-
+let song1 = new Audio('1song.mp3');
     let playicon = document.getElementById('playicon');
-    playicon.addEventListener('click', playit);
+    // playicon.addEventListener('click', playit);
 
-    function playit() {
+    // function playit() {
 
-        let song1 = new Audio('1song.mp3');
-        return song1.play();
-    }
+    //     let song1 = new Audio('1song.mp3');
+    //     return song1.play();
+    // }
+    playicon.addEventListener('click', ()=>
+    {
+        if(song1.paused || song1.currentTime<=0)
+        {
+            song1.play();
+        }
+        else
+        {
+            song1.pause();
+        }
+    });
+
 
     let playline= document.getElementById('playline');
 
-    playline.addEventListener('timeupdate',()=>{
+    song1.addEventListener('timeupdate',()=>{
         console.log('timeupdate');
     });
 
