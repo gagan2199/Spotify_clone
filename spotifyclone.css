@@ -41,11 +41,13 @@ nav ul li {
 }
 
 .cent{
-    height: 570px;
-    background-image: url('bgimg11.jpg');
+    height: 530px;
+    background-image: url('musicbg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 15px 50px;
 }
+
 
 .songone{
     background-color: white;
@@ -54,12 +56,23 @@ nav ul li {
     padding: 0px 2px;
     border-radius: 34px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
 }
 
 .one{
-    margin: 10px;
+    margin: 2px 5px;
+    align-items: center;
+}
+
+.imgcover
+{
+    height: 25px;
+    width: 25px;
+    padding: 2px;
+    border-radius: 34%;
+    
 }
 
 .bottom{
@@ -69,7 +82,8 @@ nav ul li {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(109, 158, 109);
+    background-color: black;
+    color: white;
 
 }
 
