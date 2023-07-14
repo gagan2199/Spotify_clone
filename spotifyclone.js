@@ -41,8 +41,25 @@ song1.addEventListener('timeupdate', () => {
 
     let progresstime = parseInt((song1.currentTime / song1.duration) * 100);
     console.log(progresstime);
+
+    playline.value=progresstime;
 });
 
+playline.addEventListener('change',()=>
+{
+    song1.currentTime=playline.value*song1.duration/100;
+})
 
-    // console.log(playline);
+
+//   Array.from.imgcover1= document.getElementsByClassName('imgcover1');
+// //  console.log(imgcover1);
+
+// imgcover1.addEventListener('click', () => {
+//     if (song1.paused || song1.currentTime <= 0) {
+//         song1.play();
+//     }
+//     else {
+//         song1.pause();
+//     }
+// });
 

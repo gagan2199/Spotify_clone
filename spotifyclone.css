@@ -75,6 +75,16 @@ nav ul li {
     
 }
 
+.imgcover1
+{
+    height: 25px;
+    width: 25px;
+    padding: 2px;
+    border-radius: 34%;
+    
+    
+}
+
 .bottom{
     position: sticky;
     bottom: 0;
